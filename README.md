@@ -54,4 +54,4 @@ $T(n) = 3^i * T(\frac{n}{3^i}) + \displaystyle\sum_{k=0} ^{i} {3^k}$
 
 We can substitute $log_3 (n)$ for i to get:
 
-$3^{log_3(n)} * T(\frac{n}{3^log_3(n)}) + \displaystyle\sum_{k=0} ^{log_3 (n)} {3^k} = log_3 (n) * T(1) + \displaystyle\sum_{k=0} ^{log_3 (n)} {3^k}$
+$3^{log_3(n)} * T(\frac{n}{3^{log_3(n)}}) + \displaystyle\sum_{k=0} ^{log_3(n)} {3^k} = log_3(n) * T(1) + \displaystyle\sum_{k=0} ^{log_3 (n)} {3^k}$
