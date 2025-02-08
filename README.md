@@ -47,4 +47,6 @@ Observing just the recurrence piece:
 $T(n) = 3T(\frac{n}{3}) + 1 = 3(3T(\frac{n}{3*3}) + 1) + 1 = 9T(\frac{n}{9}) + 3 + 1$
 $T(n) = 3(9T(\frac{n}{9*3}) + 3 + 1) + 1 = 27T(\frac{n}{27}) + 9 + 3 + 1$
 
-With this, we can deduce that $T(n) = 3^i * T(\frac{n}{3^i}) + \displaystyle\sum_{k=1} ^{i} \frac{n}{3^i}$ 
+With this, we can deduce that:
+
+$T(n) = 3^i * T(\frac{n}{3^i}) + \displaystyle\sum_{k=1} ^{i} \frac{n}{3^i}$ 
