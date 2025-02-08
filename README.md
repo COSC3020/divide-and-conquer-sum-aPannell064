@@ -25,3 +25,25 @@ and solve it as we did in the lectures. Give the final $\Theta$ complexity.
 
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
+
+##### Recurrence Relation
+
+If n is less than or equal to one, that function call takes just one step as it 
+just immediately returns a value. Otherwise, it makes three recursive calls, splitting
+the array into three roughly equal parts. All other actions are caried out in constant
+time. Therefore the recurrence relation is as follows:
+
+$T(1) = 1$ if $n \le 1$
+
+$T(n) = 3T(\frac{n}{3}) + 1$ if n > 1
+
+The 1 at the end of the recurrence relation represents the operations done in constant
+time as any extra constants won't mattter asypmtotically. 
+
+##### Solution
+
+Observing just the recurrence piece:
+
+$T(n) = 3T(\frac{n}{3}) + 1 = 
+
+
