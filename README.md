@@ -50,4 +50,8 @@ $T(n) = 3(9T(\frac{n}{9*3}) + 3 + 1) + 1 = 27T(\frac{n}{27}) + 9 + 3 + 1$
 
 With this, we can deduce that:
 
-$T(n) = 3^i * T(\frac{n}{3^i}) + \displaystyle\sum_{k=1} ^{i} \frac{n}{3^i}$ 
+$T(n) = 3^i * T(\frac{n}{3^i}) + \displaystyle\sum_{k=0} ^{i} {3^k}$ 
+
+We can substitute $log_3 (n)$ for i to get:
+
+$3^log_3 (n) * T(\frac{n}{3^log_3(n)}) + \displaystyle\sum_{k=0} ^{log_3 (n)} {3^k} = log_3 (n) * T(1) + \displaystyle\sum_{k=0} ^{log_3 (n)} {3^k}$
